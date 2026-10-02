@@ -14,7 +14,5 @@ RUN apt-get update && apt-get install -y \
 #Copia i file locali dentro il container
 COPY . .
 
-#Lancia l'installazione dei pacchetti Python necessari all'interno del container
-CMD ["pip", "install", "-r", "requirements.txt"]
-
+RUN pip install -r requirements.txt
 
