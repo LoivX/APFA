@@ -1,0 +1,17 @@
+services:
+  apfa:
+  #Costruisce il container a partire dal Dockerfile presente nella cartella corrente
+    build:
+      context: .
+      dockerfile: Dockerfile
+  #Associa un volume alla cartella /home del container per salvare i dati creati nel container. Il volume in questo caso è la cartella corrente.
+    volumes:
+      - $PWD:/home
+
+  #Permette di collegare una sessione di terminale al container.
+    tty: true
+  #Mantiene aperto lo standard input del container per permettere l'interazione.
+    stdin_open: true
+
+
+#Fonti: Docker 'getting started' and https://stackoverflow.com/questions/36249744/interactive-shell-using-docker-compose
