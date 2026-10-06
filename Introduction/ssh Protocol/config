@@ -1,0 +1,4 @@
+Host s284515-vdi33
+	Hostname vdi-DFCorsi-033.ds.units.it
+	User s284515@ds.units.it
+	IdentityFile ~/.ssh/Viol_vdi-DFCorsi-032_key	

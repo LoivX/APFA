@@ -9,8 +9,9 @@ WORKDIR /home
 #Installazione dei pacchetti necessari
 RUN apt-get update && apt-get install -y \
     vim \
-    gcc 
-
+    gcc \
+    openssh-client \
+    rsync 
 #Copia i file locali dentro il container
 COPY . .
 

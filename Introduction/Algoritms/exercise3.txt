@@ -1,0 +1,36 @@
+START PROGRAM
+
+ALLOCATE INTEGER array dimension d (fixed)
+ALLOCATE INTEGER i, number, lowestDistanceIndex
+ALLOCATE FLOAT k, lowestDistance
+ALLOCATE FLOAT distances dimension d (fixed)
+
+i=0
+
+WHILE i < n DO
+    GET inputNumber
+    STORE inputNumber in array(i)
+END DO
+
+GET k
+STORE k
+
+FOR i raging from 0 to d-1
+    CONVERT array(i) into FLOAT 
+    STORE the converted value in number
+    distances(i) = ABSOLUTE(number - k)
+END FOR
+
+lowestDistance = distances(0)
+lowestDistanceIndex = 0
+
+FOR i raging from 0 to d-1
+    IF(distances(i)<lowestDistance) THEN
+        lowestDistance = distances(i)
+        lowestDistanceIndex = i
+    ELSE 
+        skip to the next step
+    END DO
+END FOR
+        
+PRINT lowestDistance, lowestDistanceIndex

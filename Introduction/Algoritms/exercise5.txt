@@ -1,0 +1,15 @@
+START PROGRAM
+
+ALLOCATE INTEGER n, result
+
+GET n from user
+STORE n
+
+result = 1
+
+WHILE n>1 DO
+    result = result * n
+    n = n-1
+END DO
+
+END PROGRAM

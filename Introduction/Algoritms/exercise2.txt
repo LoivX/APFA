@@ -1,0 +1,22 @@
+START PROGRAM
+
+ALLOCATE INTEGER a, b, c dimension n (fixed)
+ALLOCATE INTEGER i, inputNumber
+
+i=0
+
+WHILE i < n DO
+    GET inputNumber
+    STORE inputNumber in a(i)
+    
+    GET inputNumber
+    STORE inputNumber in b(i)
+    
+    i=i+1
+END DO
+
+
+FOR i raging from 0 to n-1
+    c(i) = a(i)+b(n-i)
+    PRINT c(i)
+END FOR

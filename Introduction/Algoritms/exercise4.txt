@@ -1,0 +1,18 @@
+START PROGRAM
+
+ALLOCATE studentsGrades dimension 100
+ALLOCATE passedCounter
+
+FOR i raging from 0 to 99
+    GET grade
+    STORE grade in studentsGrades(i)
+END FOR
+
+passedCounter = 0
+
+FOR i raging from 0 to 99
+    IF studentsGrades(i) >= 60 THEN
+        passedCounter = passedCounter + 1
+    ELSE
+        skip to next step
+END FOR

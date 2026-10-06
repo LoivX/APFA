@@ -1,0 +1,23 @@
+START PROGRAM
+
+ALLOCATE FLOAT a,b,c,Delta, result1, result2
+
+GET a from user
+STORE a
+
+GET b from user
+STORE b
+
+GET c from user
+STORE c
+
+COMPUTE Delta = b*b - 4*a*c
+
+IF Delta < 0
+    RETURN message: "no real solution"
+ELSE
+    COMPUTE result1 = (-b + SQRT(Delta))/(2a)
+    COMPUTE result2 = (-b - SQRT(Delta))/(2a)
+END IF
+
+END PROGRAM
