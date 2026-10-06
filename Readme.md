@@ -1,8 +1,18 @@
 # Advanced Programming For Astrophysics #
-In questa repository sono contenuti tutti i file, script e output inerenti alle esercitazioni e all'esame del corso di *Advanced Programming For Astrophysics*.
+This repo contains all the files, screenshots, scripts and outputs produced during the *Advanced Programming For Astrophysics* course. 
 
-## Struttura ##
-La struttura della repo prevede che ogni cartella sia associata a una esercitazione e ne contenga i relativi file. 
+## Structure ##
+The repo is divided in folders and subfolders organized by topic. A simple diagram of how the repo is structured is shown below:
+    
+    D:.
+    +---C Language
+    |   \---Basics
+    |
+    \---Introduction
+        +---Algoritms
+        +---gitTesting
+        \---ssh Protocol
+
 
 [...]
 
