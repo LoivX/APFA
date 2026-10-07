@@ -4,7 +4,7 @@ This repo contains all the files, screenshots, scripts and outputs produced duri
 ## Structure ##
 The repo is divided in folders and subfolders organized by topic. A simple diagram of how the repo is structured is shown below:
     
-    D:.
+    Advanced Programming For Astrophysics:.
     +---C Language
     |   \---Basics
     |
@@ -16,5 +16,5 @@ The repo is divided in folders and subfolders organized by topic. A simple diagr
 
 [...]
 
-## Fonti ##
+## Sources ##
 
